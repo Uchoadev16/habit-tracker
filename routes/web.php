@@ -1,10 +1,10 @@
 <?php
 
-use App\Http\Controllers\SieController;
+use App\Http\Controllers\siteController;
 use Illuminate\Support\Facades\Route;
 
 Route::get('/welcome', function () {
     return view('welcome');
 });
 
-Route::get('/', [SieController::class,'index']);
+Route::get('/', [siteController::class,'index']);
