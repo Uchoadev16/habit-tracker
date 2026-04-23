@@ -1,9 +1,16 @@
-<h1>teste</h1>
-<p> ola,{{ $name }}</p>
-<ul>
-    @foreach ($habits as $item)
-        <li>
-    {{ $item }}
-        </li>
-    @endforeach
-</ul>
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>
+        {{ config('app.name') }}
+    </title>
+     @vite('resources/css/app.css')
+</head>
+<body>
+     <h1 class="text-3xl font-bold underline text-green-500">
+      Hello world!
+    </h1>
+</body>
+</html>
